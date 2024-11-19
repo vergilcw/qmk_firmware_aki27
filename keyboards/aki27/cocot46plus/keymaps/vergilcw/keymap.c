@@ -25,8 +25,7 @@ enum layer_number {
     _BASE = 0,
     _LOWER = 1,
     _RAISE = 2,
-    _SYMBOL = 3,
-    _RGB = 4
+    _SYMBOL = 3
 };
 /*
 enum layer_number {
@@ -89,17 +88,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                         KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,   KC_TRNS,             KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,
                                                                  KC_TRNS, KC_TRNS,  KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX)
 
-  [_RGB] = LAYOUT(
-  //|-------------------------------------------------------|                                   |-------------------------------------------------------|
-      KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, RGB_TOG,                                       SCRL_TO,  CPI_SW, SCRL_SW, ROT_L15, ROT_R15, KC_TRNS,
-  //|-------------------------------------------------------|                                   |-------------------------------------------------------|
-      KC_TRNS, XXXXXXX, RGB_VAI, RGB_SAI, RGB_HUI, RGB_MOD,                                       SCRL_MO, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_TRNS,
-  //|-------------------------------------------------------|                                   |-------------------------------------------------------|
-      KC_TRNS, XXXXXXX, RGB_VAD, RGB_SAD, RGB_HUD,RGB_RMOD,                                       CPI_SW, SCRL_SW, ROT_L15, ROT_R15, SCRL_IN, KC_TRNS,
-  //|-------------------------------------------------------|                                   |-------------------------------------------------------|
-                        KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,   KC_TRNS,             KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,
-                                              KC_TRNS, KC_TRNS,  KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX
-                                                            //`--------------'  `--------------'
     )
 
 };
